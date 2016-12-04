@@ -1,0 +1,1478 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{height: 100%;}
+
+/* Код для подключения шрифта в /css/style.css */
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../../fonts/nat-geo/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../../fonts/nat-geo/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/nat-geo/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../../fonts/nat-geo/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../../fonts/nat-geo/MyriadProBold/MyriadProBold.eot");
+    src: url("../../fonts/nat-geo/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/nat-geo/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../../fonts/nat-geo/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProItalic"; */
+@font-face {
+    font-family: "MyriadProItalic";
+    src: url("../../fonts/nat-geo/MyriadProItalic/MyriadProItalic.eot");
+    src: url("../../fonts/nat-geo/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/nat-geo/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+    url("../../fonts/nat-geo/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../../fonts/nat-geo/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../../fonts/nat-geo/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/nat-geo/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../../fonts/nat-geo/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+    font-family: "MyriadProBoldItalic";
+    src: url("../../fonts/nat-geo/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+    src: url("../../fonts/nat-geo/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/nat-geo/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+    url("../../fonts/nat-geo/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+    font-family: "MyriadProSemiBoldItalic";
+    src: url("../../fonts/nat-geo/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+    src: url("../../fonts/nat-geo/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/nat-geo/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+    url("../../fonts/nat-geo/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    height: 100%;
+    background: #fbfbfb;
+}
+
+ol, ul{list-style: none;}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a, a:hover{text-decoration: none;}
+
+.clearfix:before, .clearfix:after{
+    content: " ";
+    display: table;
+} 
+.clearfix:after{clear: both;}
+
+.left{float: left}
+.right{float: right;}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.main-wrapper {
+    margin: 40px auto 20px;
+    width: 940px;
+    height: 1389px;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "MyriadProRegular";
+    color: #989898;
+}
+
+
+.h-search {
+    position: relative;
+    margin-left: 150px;
+    height: 50px;
+    width: 445px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.h-search input[type="text"] {
+    margin: 12px 0 12px 10px; 
+    padding: 0 10px 0 35px;
+    height: 25px;
+    width: 250px;
+    font-family: "MyriadProRegular";
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #e8e8e8;
+    
+}
+
+.h-search input[type="text"]::-webkit-input-placeholder {
+    font-size: 15px;
+    font-style: italic;
+    color: #e7e7e7;
+}
+
+.h-search input[type="text"]::-moz-placeholder {
+    font-size: 15px;
+    font-style: italic;
+    color: #e7e7e7;
+}
+
+.h-search input[type="text"]::-o-input-placeholder {
+    font-size: 15px;
+    font-style: italic;
+    color: #e7e7e7;
+}
+
+.i-search {
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    height: 21px;
+    width: 21px;
+    background: url(../../img/nat-geo/h-search.png);
+}
+
+#categories {
+    padding-left: 4px;
+    height: 25px;
+    width: 140px;
+    font-size: 15px;
+    color: #cacaca;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #e8e8e8;
+    background:url(../../img/nat-geo/h-i-down.png) no-repeat 110px center;
+       
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+}
+
+.h-search input[type="submit"] {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    border: none;
+    background-color: #fff;
+    background: url(../../img/nat-geo/h-i-submit.png);
+    cursor: pointer;
+}
+
+.h-search input[type="submit"]:hover {background-position: 0 -26px;}
+
+.h-authorization {
+    height: 50px;
+    width: 160px;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.h-authorization a {color: #999999;}
+
+img.separator {margin-top: 12px;}
+
+.h-a-singup {
+    margin: 7px 18px 6px 16px;
+    height: 35px;
+    width: 48px;
+}
+
+.h-authorization a:hover span {color:#fdcc05;}
+.h-authorization a:hover .h-a-s-img1 {background-position: 0 -16px;}
+.h-authorization a:hover .h-a-s-img2 {background-position: 16px -16px;}
+
+.h-a-s-img1 {
+    margin: 3px 0 3px 14px;
+    height: 16px;
+    width: 16px;
+    background: url(../../img/nat-geo/h-authorization-sprite.png);
+}
+
+.h-a-singup span,
+.h-a-login span {font-size: 14px}
+
+.h-a-login {
+    margin: 7px 18px 10px 0; 
+    height: 35px;
+    width: 35px;
+}
+
+.h-a-s-img2 {
+    margin: 3px 0 3px 7px;
+    height: 16px;
+    width: 16px;
+    background: url(../../img/nat-geo/h-authorization-sprite.png);
+    background-position: 16px 0;
+}
+
+.menu {
+    margin: 35px 0 25px;
+    width: 100%;
+}
+
+.menu-top {
+    position: relative;
+    height: 35px;
+}
+
+.menu-top img {
+    position: relative;
+    padding-top: 15px
+}
+
+.menu-top li.active .m-t-item1 {
+  background-position: 0 -51px;
+}
+
+.menu-top li.active .m-t-item2 {
+  background-position: -34px -50px;
+}
+
+.menu-top li.active .m-t-item3 {
+  background-position: -69px -50px;
+}
+
+.menu-top li.active .m-t-item4 {
+  background-position: -104px -50px;
+}
+
+.menu-top li.active .m-t-item5 {
+  background-position: -137px -50px;
+}
+
+.menu-top li.active .m-t-item6 {
+  background-position: -173px -50px;
+}
+
+.menu-top li.active .m-t-item7 {
+  background-position: -206px -54px;
+}
+
+.menu-top li.active .m-t-item8 {
+  background-position: -242px -50px;
+}
+
+
+.menu-top li.active .m-t-item1 span {
+  margin: 40px 0 0 -1px;
+}
+
+.menu-top li.active .m-t-item2 span {
+  margin: 40px 0 0 -33px;
+}
+
+.menu-top li.active .m-t-item3 span {
+  margin: 40px 0 0 -3px;
+}
+
+.menu-top li.active .m-t-item4 span {
+  margin: 41px 0 0 -31px;
+}
+
+.menu-top li.active .m-t-item5 span {
+  margin: 40px 0 0 -7px;
+}
+
+.menu-top li.active .m-t-item6 span {
+  margin: 40px 0 0 -27px;
+}
+
+.menu-top li.active .m-t-item7 span {
+  margin: 40px 0 0 -17px;
+}
+
+.menu-top li.active .m-t-item8 span {
+  margin: 40px 0 0 3px;
+}
+
+.menu-top li.active span {
+  color: #fdcc05;
+  text-transform: uppercase;
+}
+
+.m-t-item1 {
+    position: absolute;
+    margin: -26px 60px 0 20px;
+    height: 40px;
+    width: 42px;
+    background: url(../../img/nat-geo/m-t-sprite.jpg);
+    background-position: 0 -111px;
+}
+
+.m-t-item1:hover {background-position: 0 -51px;}
+.m-t-item1:hover span,
+.m-t-item1 span:hover {
+    margin: 40px 0 0 -1px;
+    color: #fdcc05;
+    text-transform: uppercase;
+}
+
+.m-t-item2 {
+    position: absolute;
+    margin: -25px 30px 0 143px;
+    height: 40px;
+    width: 42px;
+    background: url(../../img/nat-geo/m-t-sprite.jpg);
+    background-position: -34px 0;
+}
+
+
+.m-t-item2:hover {background-position: -34px -50px;}
+.m-t-item2:hover span,
+.m-t-item2 span:hover {
+    margin: 40px 0 0 -33px;
+    color: #fdcc05;
+    text-transform: uppercase;
+}
+
+.m-t-item3 {
+    position: absolute;
+    margin: -24px 30px 0 275px;
+    height: 35px;
+    width: 42px;
+    background: url(../../img/nat-geo/m-t-sprite.jpg);
+    background-position: -69px 0;
+}
+
+.m-t-item3:hover {background-position: -69px -50px;}
+.m-t-item3:hover span,
+.m-t-item3 span:hover {
+    margin: 40px 0 0 -3px;
+    color: #fdcc05;
+    text-transform: uppercase;
+}
+
+.m-t-item4 {
+    position: absolute;
+    margin: -24px 30px 0 393px;
+    height: 35px;
+    width: 41px;
+    background: url(../../img/nat-geo/m-t-sprite.jpg);
+    background-position: -104px 0;
+}
+
+.m-t-item4:hover {background-position: -104px -50px;}
+.m-t-item4:hover span,
+.m-t-item4 span:hover {
+    margin: 41px 0 0 -31px;
+    color: #fdcc05;
+    text-transform: uppercase;
+}
+
+.m-t-item5 {
+    position: absolute;
+    margin: -22px 30px 0 510px;
+    height: 40px;
+    width: 42px;
+    background: url(../../img/nat-geo/m-t-sprite.jpg);
+    background-position: -137px 0;
+}
+
+.m-t-item5:hover {background-position: -137px -50px;}
+.m-t-item5:hover span,
+.m-t-item5 span:hover {
+    margin: 40px 0 0 -7px;
+    color: #fdcc05;
+    text-transform: uppercase;
+}
+
+.m-t-item6 {
+    position: absolute;
+    margin: -21px 30px 0 628px;
+    height: 35px;
+    width: 42px;
+    background: url(../../img/nat-geo/m-t-sprite.jpg);
+    background-position: -173px 0;
+}
+
+.m-t-item6:hover {background-position: -173px -50px;}
+.m-t-item6:hover span,
+.m-t-item6 span:hover {
+    margin: 40px 0 0 -27px;
+    color: #fdcc05;
+    text-transform: uppercase;
+}
+
+.m-t-item7 {
+    position: absolute;
+    margin: -21px 30px 0 746px;
+    height: 31px;
+    width: 42px;
+    background: url(../../img/nat-geo/m-t-sprite.jpg);
+    background-position: -206px -2px;
+}
+
+.m-t-item7:hover {background-position: -206px -54px;}
+.m-t-item7:hover span,
+.m-t-item7 span:hover {
+    margin: 40px 0 0 -17px;
+    color: #fdcc05;
+    text-transform: uppercase;
+}
+
+.m-t-item8 {
+    position: absolute;
+    margin: -22px 30px 0 864px;
+    height: 35px;
+    width: 38px;
+    background: url(../../img/nat-geo/m-t-sprite.jpg);
+    background-position: -242px 0;
+}
+
+.m-t-item8:hover {background-position: -242px -50px;}
+.m-t-item8:hover span,
+.m-t-item8 span:hover {
+    margin: 40px 0 0 3px;
+    color: #fdcc05;
+    text-transform: uppercase;
+}
+
+.m-t-item1 span,
+.m-t-item2 span,
+.m-t-item3 span, 
+.m-t-item4 span, 
+.m-t-item5 span, 
+.m-t-item6 span, 
+.m-t-item7 span, 
+.m-t-item8 span {
+    position: absolute;
+    font-size: 16px;
+    font-family: "MyriadProSemiBold";
+    color: #555555;
+}
+
+.m-t-item1 span {margin: 40px 0 0 0;}
+.m-t-item2 span {margin: 40px 0 0 -25px;}
+.m-t-item3 span {margin: 40px 0 0 -1px;}
+.m-t-item4 span {margin: 41px 0 0 -25px;}
+.m-t-item5 span {margin: 40px 0 0 -3px;}
+.m-t-item6 span {margin: 40px 0 0 -20px;}
+.m-t-item7 span {margin: 40px 0 0 -11px;}
+.m-t-item8 span {margin: 40px 0 0 5px;}
+
+.content {
+    margin: 40px auto 0;
+    width: 705px;
+    height: 895px;
+    border-right: 1px solid #eeeeee;
+}
+
+.c-menu {
+    padding-right: 12px;
+    height: 377px;
+    width: 175px;
+    border-right: 1px solid #eeeeee;
+}
+
+.c-menu li {
+  display: inline-block;
+  width: 77px;
+}
+
+.c-m-l-item1,
+.c-m-l-item2,
+.c-m-l-item3,
+.c-m-l-item4,
+.c-m-l-item5,
+.c-m-l-item6,
+.c-m-l-item7,
+.c-m-l-item8,
+.c-m-l-item9,
+.c-m-l-item10 {
+    height: 70px;
+    width: 77px;
+    border: 1px solid #eeeeee;
+}
+
+.c-menu li.active .c-m-l-item1,
+.c-menu li.active .c-m-l-item2, 
+.c-menu li.active .c-m-l-item3, 
+.c-menu li.active .c-m-l-item4,
+.c-menu li.active .c-m-l-item5,
+.c-menu li.active .c-m-l-item6,
+.c-menu li.active .c-m-l-item7,
+.c-menu li.active .c-m-l-item8,
+.c-menu li.active .c-m-l-item9,
+.c-menu li.active .c-m-l-item10 {
+  background-color: #555555;
+}
+
+.c-menu li.active .c-m-l-item1 span,
+.c-menu li.active .c-m-l-item2 span,
+.c-menu li.active .c-m-l-item3 span, 
+.c-menu li.active .c-m-l-item4 span, 
+.c-menu li.active .c-m-l-item5 span, 
+.c-menu li.active .c-m-l-item6 span, 
+.c-menu li.active .c-m-l-item7 span, 
+.c-menu li.active .c-m-l-item8 span, 
+.c-menu li.active .c-m-l-item9 span, 
+.c-menu li.active .c-m-l-item10 span {
+  color: #fff;
+}
+
+li.active .c-m-l-item1 .c-m-l-item-img1 {background-position: -3px -47px;}
+li.active .c-m-l-item2 .c-m-l-item-img2 {background-position: -43px -47px;}
+li.active .c-m-l-item3 .c-m-l-item-img3 {background-position: -83px -47px;}
+li.active .c-m-l-item4 .c-m-l-item-img4 {background-position: -123px -47px;}
+li.active .c-m-l-item5 .c-m-l-item-img5 {background-position: -163px -47px;}
+li.active .c-m-l-item6 .c-m-l-item-img6 {background-position: -203px -47px;}
+li.active .c-m-l-item7 .c-m-l-item-img7 {background-position: -243px -47px;}
+li.active .c-m-l-item8 .c-m-l-item-img8 {background-position: -283px -47px;}
+li.active .c-m-l-item9 .c-m-l-item-img9 {background-position: -323px -47px;}
+li.active .c-m-l-item10 .c-m-l-item-img10 {background-position: -363px -47px;}
+
+
+.c-menu li:nth-child(2n+1) {
+  margin-right: 5px;
+}
+
+.c-m-l-item1 {
+  background-color: #fff;
+}
+
+.c-m-l-item2 {background-color: #fff;}
+.c-m-l-item3 {
+    margin: 7px 5px 0 0;
+    background-color: #fff;
+}
+.c-m-l-item4 {background-color: #fff;}
+.c-m-l-item5 {
+    margin: 7px 5px 0 0;
+    background-color: #fff;
+}
+.c-m-l-item6 {background-color: #fff;}
+.c-m-l-item7 {
+    margin: 7px 5px 0 0;
+    background-color: #fff;
+}
+.c-m-l-item8 {background-color: #fff;}
+.c-m-l-item9 {
+    margin: 7px 5px 0 0;
+    background-color: #fff;
+}
+.c-m-l-item10 {background-color: #fff;}
+
+.c-m-l-item1:hover,
+.c-m-l-item2:hover,
+.c-m-l-item3:hover, 
+.c-m-l-item4:hover, 
+.c-m-l-item5:hover, 
+.c-m-l-item6:hover, 
+.c-m-l-item7:hover, 
+.c-m-l-item8:hover, 
+.c-m-l-item9:hover, 
+.c-m-l-item10:hover {background-color: #555555;}
+
+.c-m-l-item1:hover span,
+.c-m-l-item2:hover span,
+.c-m-l-item3:hover span, 
+.c-m-l-item4:hover span, 
+.c-m-l-item5:hover span, 
+.c-m-l-item6:hover span, 
+.c-m-l-item7:hover span, 
+.c-m-l-item8:hover span, 
+.c-m-l-item9:hover span, 
+.c-m-l-item10:hover span{color: #fff;}
+
+.c-m-l-item1:hover .c-m-l-item-img1 {background-position: -3px -47px;}
+.c-m-l-item2:hover .c-m-l-item-img2 {background-position: -43px -47px;}
+.c-m-l-item3:hover .c-m-l-item-img3 {background-position: -83px -47px;}
+.c-m-l-item4:hover .c-m-l-item-img4 {background-position: -123px -46px;}
+.c-m-l-item5:hover .c-m-l-item-img5 {background-position: -163px -46px;}
+.c-m-l-item6:hover .c-m-l-item-img6 {background-position: -203px -45px;}
+.c-m-l-item7:hover .c-m-l-item-img7 {background-position: -243px -45px;}
+.c-m-l-item8:hover .c-m-l-item-img8 {background-position: -285px -45px;}
+.c-m-l-item9:hover .c-m-l-item-img9 {background-position: -323px -45px;}
+.c-m-l-item10:hover .c-m-l-item-img10 {background-position: -363px -45px;}
+
+.c-m-l-item-img1,
+.c-m-l-item-img2,
+.c-m-l-item-img3,
+.c-m-l-item-img4,
+.c-m-l-item-img5,
+.c-m-l-item-img6,
+.c-m-l-item-img7,
+.c-m-l-item-img8,
+.c-m-l-item-img9,
+.c-m-l-item-img10 {
+    margin: 10px auto 5px;
+    height: 30px;
+    width: 35px;
+    background: url(../../img/nat-geo/c-m-l-i-img-sprite.png);
+}
+
+.c-m-l-item-img1 {background-position: -3px -6px;}
+.c-m-l-item-img2 {background-position: -43px -6px;}
+.c-m-l-item-img3 {background-position: -83px -6px;}
+.c-m-l-item-img4 {background-position: -123px -6px;}
+.c-m-l-item-img5 {background-position: -162px -6px;}
+.c-m-l-item-img6 {background-position: -203px -6px;}
+.c-m-l-item-img7 {background-position: -243px -6px;}
+.c-m-l-item-img8 {background-position: -284px -6px;}
+.c-m-l-item-img9 {background-position: -323px -5px;}
+.c-m-l-item-img10 {background-position: -363px -5px;}
+
+
+
+.c-m-l-item1 span,
+.c-m-l-item2 span,
+.c-m-l-item3 span,
+.c-m-l-item4 span,
+.c-m-l-item5 span,
+.c-m-l-item6 span,
+.c-m-l-item7 span,
+.c-m-l-item8 span,
+.c-m-l-item9 span,
+.c-m-l-item10 span {
+    color: #777777;
+}
+
+.c-m-l-item1 span {margin-left: 10px;}
+.c-m-l-item2 span {margin-left: 10px;}
+.c-m-l-item3 span {margin-left: 24px;}
+.c-m-l-item4 span {margin-left: 17px;}
+.c-m-l-item5 span {margin-left: 11px;}
+.c-m-l-item6 span {margin-left: 20px;}
+.c-m-l-item7 span {margin-left: 21px;}
+.c-m-l-item8 span {margin-left: 22px;}
+.c-m-l-item9 span {margin-left: 15px;}
+.c-m-l-item10 span {margin-left: 24px;}
+
+.c-content {
+    width: 529px;
+    padding: 0 12px;
+}
+
+.c-c-menu {
+    height: 30px;
+    width: 507px;
+    text-align: center;
+}
+ 
+.c-c-menu span  {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 77px;
+    padding-top: 7px;
+    font: 12px Arial,sans-serif;
+    color: #777777;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    cursor: pointer;
+}
+
+.c-c-menu span+span {margin-left: 6px}
+
+.c-c-menu span.active,
+.c-c-menu span:hover {
+    background-color: #555555;
+    color: #fff;
+}
+
+.c-c-menu span.active:after {
+    position: absolute;
+    left: 37%;
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: 5px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #555555;
+}
+
+.c-c-menu span:hover:after {
+    position: absolute;
+    left: 37%;
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: 6px;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid #555555;
+}
+
+.c-c-news {
+    position: relative;
+    margin-top: 9px;
+}
+
+.c-c-n-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 81px;
+    background-color: #555555;
+    
+}
+.c-c-n-n-1,
+.c-c-n-n-2,
+.c-c-n-n-active {
+    float: left;
+    padding: 7px 0 0 9px;
+    height: 30px;
+    width: 27px;
+    font-family: "MyriadProSemiBold";
+    font-size: 16px;
+    color: #fff;
+}
+
+.c-c-n-n-1 {background: url(../../img/nat-geo/c-c-n-number-separator.png) no-repeat right;}
+
+.c-c-n-n-active {background-color: #fdcc05;}
+
+.c-c-n-n-1:hover,
+.c-c-n-n-2:hover {
+    background: none;
+    background-color: #fdcc05;
+}
+
+.c-c-n-info {
+    padding: 12px;
+    width: 453px;
+    height: 52px;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+
+.c-c-n-info h2 {
+    font-family: "MyriadProSemiBold";
+    font-size: 15px;
+    color: #555555;
+}
+
+.c-c-n-info p {
+    margin-top: 3px;
+    font-size: 11px;
+    color: #555555;
+}
+
+.c-c-n-pause {
+    height: 52px;
+    width: 52px;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    border-left: none;
+    border-top: none;
+}
+
+.c-c-n-pause img {margin: 17px 18px;}
+
+.c-c-n-info-latest-news {
+    margin-top: 24px;
+    height: 36px;
+    width: 505px;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+}
+
+.c-c-n-info-latest-news span:hover {text-decoration: underline;}
+
+.c-c-n-info-latest-news img {
+    float: left;
+    margin: 10px 13px;}
+
+.c-c-n-info-latest-news span {
+    float: left;
+    padding-top: 11px;
+    font-family: "MyriadProSemiBold";
+    font-size: 12px;
+    color: #777777;
+}
+
+.c-c-n-info-latest-news img.sep {
+    margin: 8px 0 0 20px;
+}
+
+#news-cat {
+    margin: 5px 0 0 35px;
+    height: 25px;
+    width: 107px;
+    color: #cacaca;
+    border: 1px solid #fff;
+    background: url(../../img/nat-geo/news-cat-down.png) no-repeat 90px center;
+       
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+}
+
+.l-n-location {
+    display: inline-block;
+    height: 100%;
+    width: 80px;
+    background-color: #555555;
+}
+
+.l-n-location1-active,
+.l-n-location1 {
+    float: left;
+    height: 100%;
+    width: 40px;
+}
+
+.l-n-location1-active {background: url(../../img/nat-geo/l-n-location-list.png)no-repeat center #fdcc05;}
+
+.l-n-location1 {background: url(../../img/nat-geo/l-n-location-grid.png)no-repeat center;}
+
+.l-n-location1:hover {background: url(../../img/nat-geo/l-n-location-grid.png)no-repeat center #fdcc05;}
+
+.c-bottom {
+    height: 519px;
+    width: 692px;
+}
+
+.c-b-item,
+.c-b-item1 {
+    float: left;
+    height: 245px;
+    width: 338px;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+}
+
+.c-b-item p,
+.c-b-item1 p {
+  text-align: justify;
+}
+
+.c-b-item {margin-top: 15px;}
+.c-b-item1 {margin: 15px 15px 0 0;}
+
+.c-b-i-item {
+    margin: 4px;
+    height: 150px;
+    width: 328px;
+    background-color: #fbfbfb;
+    border: 1px solid #eeeeee;
+}
+
+.c-b-i-item img {margin: 4px 4px 8px;}
+
+.c-b-i-i-left {margin-left: 4px;}
+
+.c-b-i-i-left h3 {
+    margin-bottom: 3px;
+    font-family: "MyriadProSemiBold";
+    font-size: 14px;
+    color: #777777;
+}
+
+.c-b-i-i-left h3:hover {text-decoration: underline;}
+
+.c-b-i-i-left span,
+.c-b-i-i-right span {
+    font-size: 11px;
+    color: #a0a0a0;
+}
+
+.rate {
+    margin:0 2px 3px -1px;
+    height: 14px;
+    width: 75px;
+    background: url(../../img/nat-geo/rate-e-star.png);
+}
+
+.rate > div {
+    height: 14px;
+    width: 65px;
+    background: url(../../img/nat-geo/rate-star.png);
+}
+
+.c-b-item p,
+.c-b-item1 p {margin: 10px 5px;}
+
+.sidebar {
+    margin-top: 40px;
+    width: 223px;
+    height: 895px;
+}
+
+.s-n-title,
+.s-n-title1,
+.s-n-title2,
+.s-b-title2 {
+    height: 30px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+}
+
+.s-n-title img,
+.s-n-title1 img,
+.s-n-title2 img,
+.s-b-title2 img {
+    float: left;
+    margin: 7px 0 0 10px;
+}
+
+.s-n-title h4,
+.s-n-title1 h4,
+.s-n-title2 h4,
+.s-b-title2 h4 {
+    margin: 8px 0 0 36px;
+    font-family: "MyriadProSemiBold";
+    color: #777777;
+}
+
+.s-n-title h4:hover,
+.s-n-title1 h4:hover,
+.s-n-title2 h4:hover,
+.s-b-title2 h4:hover {text-decoration: underline;}
+
+.s-n-content,
+.s-n-content1,
+.s-n-content2 {
+    margin-top: 8px;
+    height: 152px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+}
+
+.s-n-content2 p {
+  text-align: justify;
+}
+
+.s-n-content img {margin: 5px 5px 10px;}
+
+.s-n-c-left,
+.s-n-c-left1 {margin-left: 5px;}
+
+.s-n-c-left h3,
+.s-n-c-left1 h3,
+.s-n-content2 h3 {
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-family: "MyriadProSemiBold";
+    color: #777777;
+}
+
+.s-n-c-left h3:hover,
+.s-n-c-left1 h3:hover,
+.s-n-content2 h3:hover {text-decoration: underline;}
+
+.s-n-c-left span,
+.s-n-c-left1 span {
+    font-size: 11px;
+    color: #a0a0a0;
+}
+
+.s-n-c-play {
+    position: absolute;
+    height: 39px;
+    width: 39px;
+    right: 13px;
+    bottom: 14px;
+    cursor: pointer;
+    background: url(../../img/nat-geo/s-n-c-right-play.png);
+    background-position: -1px -1px;
+}
+
+.s-n-c-play:hover {background-position: -1px -40px;}
+
+.s-n-c-right {margin-right: 3px;}
+
+.s-n-title1,
+.s-n-title2 {margin-top: 20px;}
+
+.s-n-title1 h4,
+.s-n-title2 h4 {margin-top: 7px;}
+
+.s-n-title1 img {margin: 8px 0 0 8px;}
+
+.s-n-content1 {
+    position: relative;
+    height: 112px;
+}
+
+.s-n-content1 img {margin: 5px;}
+
+.s-n-c-left1 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.s-n-c-left1 h3,
+.s-n-c-left1 span {color: #fff;}
+
+.s-n-title2 img {margin-top: 6px;}
+
+.s-n-title2 a,
+.s-b-title2 a {float: left}
+
+.s-n-title2 h4 {margin-left: 12px;}
+
+.s-n-t2-right {
+    width: 67px;
+    height: 30px;
+}
+
+img.prev-sep {float: left;}
+
+.prev-left,
+.prev-right {
+    float: left;
+    margin-top: 3px;
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+}
+
+.prev-left {
+    background: url(../../img/nat-geo/prev-left.png);
+    background-position: -1px -1px;
+}
+.prev-left:hover {background-position: -1px -25px;}
+
+.prev-right {
+    background: url(../../img/nat-geo/prev-right.png);
+    background-position: -1px -2px;
+}
+
+.prev-right:hover {background-position: -1px -26px;}
+
+img.prev-sep {margin: 5px 8px 0;}
+
+.s-n-content2 {
+    margin: 10px 0;
+    position: relative;
+    height: 150px;
+}
+
+.s-n-content2 img {
+    margin: 0px 5px 5px;
+    padding-top: 7px;
+    border-top: 1px solid #eeeeee;
+}
+
+.s-n-content2 h3 {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.s-n-c2-date {
+    position: absolute;
+    bottom: 60px;
+    left: 10px;
+    height:  13px;
+    width: 75px;
+    background: url(../../img/nat-geo/s-n-c2-date-time.png) no-repeat;
+}
+
+.s-n-c2-date span {
+    padding-left: 17px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.s-n-content2 p {
+    margin: 7px 5px;
+    font-size: 11px;
+    color: #777777;
+}
+
+.s-n-c-bottom {margin-top: 17px;}
+
+.s-n-c-b-shop,
+.s-n-c-b-shop1 {
+    height: 30px;
+    width: 95px;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+}
+
+.s-n-c-b-shop1 {
+    margin-left: 11px;
+    width: 117px;
+}
+
+.s-n-c-b-s-img,
+.s-n-c-b-s-img1{
+    float: left;
+    margin: 4px;
+    height: 21px;
+    width: 84px;
+    cursor: pointer;
+}
+
+.s-n-c-b-s-img {background: url(../../img/nat-geo/s-n-c-b-shop-img.png) no-repeat;}
+
+.s-n-c-b-s-img1 {
+    width: 110px;
+    background: url(../../img/nat-geo/s-n-c-b-shop-img1.png) no-repeat;
+}
+
+.s-n-c-b-s-img:hover {background-position: 0 -20px;}
+.s-n-c-b-s-img:hover .s-n-c-b-s-sep {background-position: -1px 0;}
+.s-n-c-b-s-img:hover span {color: #fdcc05;}
+
+.s-n-c-b-s-img1:hover {background-position: 0 -20px;}
+.s-n-c-b-s-img1:hover .s-n-c-b-s-sep1 {background-position: -1px 0;}
+.s-n-c-b-s-img1:hover span {color: #fdcc05;}
+
+.s-n-c-b-s-sep,
+.s-n-c-b-s-sep1 {
+    float: left;
+    margin: 2px 0 0 23px;
+    height: 19px;
+    width: 1px;
+    background: url(../../img/nat-geo/s-n-c-b-s-sep.png) no-repeat;
+}
+
+.s-n-c-b-s-sep1 {margin-left: 26px}
+
+.s-n-c-b-s-img span,
+.s-n-c-b-s-img1 span {
+    float: right;
+    padding: 4px 4px 0 0;
+    font-size: 11px;
+    color: #777777;
+    text-transform: uppercase;
+}
+
+.s-n-c-b-s-img1 span {padding: 5px 0 0 -2px;}
+
+.sidebar-bottom {
+    margin: 20px 0;
+    padding-top: 20px;
+    float: left;
+    width: 940px;
+    height: 266px;
+    border-top: 1px solid #eeeeee;
+}
+
+.s-b-magazine,
+.s-b-magazine1,
+.s-b-magazine2,
+.s-b-magazine3 {
+    margin: 12px 10px 0 0; 
+    height: 202px;
+    width: 227px;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+}
+
+.s-b-magazine3 {margin: 12px 0 0 2px;}
+
+.s-b-m-item {
+    margin: 8px 5px 12px;
+    height: 146px;
+    width: 215px;
+    border: 1px solid #eeeeee;
+    background-color: #fbfbfb;
+}
+
+.s-b-m-item img {margin: 11px 3px 13px 70px;}
+
+.s-b-magazine3 > .s-b-m-item img {margin: 11px 3px 13px 60px;}
+
+.s-b-m-item span {
+    float: left;
+    margin-left: 20px;
+    font-size: 13px;
+    font-family: "MyriadProSemiBold";
+    color: #777777;
+    cursor: pointer;
+}
+
+.s-b-magazine1 > .s-b-m-item span {margin-left: 8px;}
+.s-b-magazine2 > .s-b-m-item span {margin-left: 25px;}
+.s-b-magazine3 > .s-b-m-item span {margin-left: 33px;}
+
+.s-b-m-item span:hover {text-decoration: underline;}
+
+.s-b-magazine > .s-n-c-right,
+.s-b-magazine1 > .s-n-c-right,
+.s-b-magazine2 > .s-n-c-right,
+.s-b-magazine3 > .s-n-c-right {margin-left: 6px} 
+
+.s-b-magazine > .s-n-c-b-shop1,
+.s-b-magazine1 > .s-n-c-b-shop1,
+.s-b-magazine2 > .s-n-c-b-shop1,
+.s-b-magazine3 > .s-n-c-b-shop1 {
+    height: 35px;
+    width: 103px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.s-b-magazine > .s-n-c-b-shop1 span,
+.s-b-magazine1 > .s-n-c-b-shop1 span,
+.s-b-magazine2 > .s-n-c-b-shop1 span,
+.s-b-magazine3 > .s-n-c-b-shop1 span {
+    float: left;
+    padding-left: 7px;
+    font-size: 12px;
+}
+
+.s-b-magazine > .s-n-c-b-shop1 > .s-n-c-b-s-img1 > .s-n-c-b-s-sep1,
+.s-b-magazine1 > .s-n-c-b-shop1 > .s-n-c-b-s-img1 > .s-n-c-b-s-sep1,
+.s-b-magazine2 > .s-n-c-b-shop1 > .s-n-c-b-s-img1 > .s-n-c-b-s-sep1,
+.s-b-magazine3 > .s-n-c-b-shop1 > .s-n-c-b-s-img1 > .s-n-c-b-s-sep1 {margin-left: 21px;}
+
+.s-b-magazine > .s-n-c-b-shop1 > .s-n-c-b-s-img1,
+.s-b-magazine1 > .s-n-c-b-shop1 > .s-n-c-b-s-img1,
+.s-b-magazine2 > .s-n-c-b-shop1 > .s-n-c-b-s-img1,
+.s-b-magazine3 > .s-n-c-b-shop1 > .s-n-c-b-s-img1 {
+    background: url(../../img/nat-geo/s-b-magazine.png) no-repeat;}
+
+.s-b-magazine > .s-n-c-b-shop1 > .s-n-c-b-s-img1:hover,
+.s-b-magazine1 > .s-n-c-b-shop1 > .s-n-c-b-s-img1:hover,
+.s-b-magazine2 > .s-n-c-b-shop1 > .s-n-c-b-s-img1:hover,
+.s-b-magazine3 > .s-n-c-b-shop1 > .s-n-c-b-s-img1:hover {background-position: 0 -21px;}
+
+.footer-wrapper {
+    margin: 0 auto;
+    height: 70px;
+    width: 1020px;
+    background-color: #242424;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "MyriadProRegular";
+    color: #989898;
+}
+
+.footer {
+    margin: 0 40px;
+    height: 70px;
+    width: 940px;
+    background-color: #1f1f1f;
+}
+
+.f-left {
+    position: relative;
+    width: 500px
+}
+
+.f-l-search input[type="text"] {
+    float: left;
+    margin: 18px 0 0 8px;
+    padding-left: 12px;
+    color: #595959;
+    height: 40px;
+    width: 338px;
+    background-color: #282828;
+    border: none;
+    
+    -webkit-box-shadow: inset 1px 1px  4px 1px rgba(0,0,0,.3),
+                        inset 1px 1px  4px 1px rgba(0,0,0,.8);
+       -moz-box-shadow: inset 1px 1px  4px 1px rgba(0,0,0,.3),
+                        inset 1px 1px  4px 1px rgba(0,0,0,.8);
+        -ms-box-shadow: inset 1px 1px  4px 1px rgba(0,0,0,.3),
+                        inset 1px 1px  4px 1px rgba(0,0,0,.8);
+         -o-box-shadow: inset 1px 1px  4px 1px rgba(0,0,0,.3),
+                        inset 1px 1px  4px 1px rgba(0,0,0,.8);
+            box-shadow: inset 1px 1px  4px 1px rgba(0,0,0,.3),
+                        inset 1px 1px  4px 1px rgba(0,0,0,.8);
+} 
+
+.f-l-search input[type="text"]::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #595959;
+}
+
+.f-l-search input[type="text"]::-moz-input-placeholder {
+    font-size: 14px;
+    color: #595959;
+}
+
+.f-l-search input[type="text"]::-o-input-placeholder {
+    font-size: 14px;
+    color: #595959;
+}
+
+.f-l-search input[type="submit"] {
+    position: absolute;
+    top: 21px;
+    right: 157px;
+    height: 33px;
+    width: 100px;
+    cursor: pointer;
+    border: 1px solid #292929;
+    background-color: #1f1f1f;
+    font-family: "MyriadProSemiBold";
+    font-size: 13px;
+    color: #848484;
+    
+    -webkit-box-shadow: 0px 1px  0px 1px rgba(0,0,0,.17),
+            inset 0px 1px  1px 0px rgba(255,255,255,.05);
+       -moz-box-shadow: 0px 1px  0px 1px rgba(0,0,0,.17),
+            inset 0px 1px  1px 0px rgba(255,255,255,.05);
+        -ms-box-shadow: 0px 1px  0px 1px rgba(0,0,0,.17),
+            inset 0px 1px  1px 0px rgba(255,255,255,.05);
+         -o-box-shadow: 0px 1px  0px 1px rgba(0,0,0,.17),
+            inset 0px 1px  1px 0px rgba(255,255,255,.05);
+        
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.f-l-search input[type="submit"]:hover {color: #fdcc05;}
+
+.f-l-social {
+    float: left;
+    margin: 23px 0 0 14px; 
+    height: 30px;
+    width: 102px;
+}
+
+.fb,.tw,.yt {
+    float: left;
+    height: 27px;
+    margin-right: 10px;
+    background: url(../../img/nat-geo/s-sprite.png);
+}
+
+.fb {width: 15px;}
+
+.fb:hover {background-position: 0 -27px;}
+
+.tw {
+    width: 32px;
+    background-position: -19px 0;
+}
+
+.tw:hover {background-position: -19px -27px;}
+
+.yt {
+    width: 25px;
+    background-position: -51px 0;
+}
+
+.yt:hover {background-position: -51px -27px;}
+
+.f-right ul {margin: 25px 10px 7px 0;}
+
+.f-right li {
+    display: inline-block;
+    padding: 0 10px 0 7px;
+    border-right: 1px solid #bbbbbb;
+}
+
+.f-right li:last-child {
+    padding-right: 0;
+    border: none;
+}
+
+.f-right a {color: #bbbbbb;}
+
+.f-right a:hover {
+    color: #fdcc05;
+    text-decoration: underline;
+}
+
+.f-right span {
+    margin-left: 40px;
+    color: #4a4a4a;
+}
+
+/*Плавное появление элементов сайта*/
+.fade{transition: all 300ms linear;}
+
+.out{opacity: 0;}
+
+.loadsite{
+    position: absolute;
+    top: 40%;
+    width: 100%; padding: 0; margin: 0;
+    color: #29d;
+    font-size: 24px;
+    text-align: center;
+    z-index: 999;
+    text-shadow: 0 0 5px #000;
+    
+    -webkit-animation: 1s ls infinite;
+       -moz-animation: 1s ls infinite;
+            animation: 1s ls infinite;
+}
+
+@-webkit-keyframes ls{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@-moz-keyframes ls{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes ls{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.dn{display: none;}
